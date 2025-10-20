@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="assets/profil.jpg" alt="Your Profile Picture">
+            </div>
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Your Name</span></h1>
+            <h2 class="animate-text-delay">Full Stack Developer</h2>
+            <p class="animate-text-delay-2">Turning ideas into reality through code</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">Project Statistics</h2>
+        <p class="stats-subtitle">Data-driven insights into my professional journey and achievements</p>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="stat-number">45</div>
+                <div class="stat-label">Projects Completed</div>
+                <div class="stat-subtext">+8 ongoing</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-number">32</div>
+                <div class="stat-label">Total Clients</div>
+                <div class="stat-subtext">18 returning clients</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-number">98<span class="percent">%</span></div>
+                <div class="stat-label">Success Rate</div>
+                <div class="stat-subtext">95% on-time delivery</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5 / CSS3</li>
+                    <li>JavaScript / TypeScript</li>
+                    <li>React / Vue.js</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js / Express</li>
+                    <li>Python / Django</li>
+                    <li>RESTful APIs</li>
+                    <li>Database Design</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git / GitHub</li>
+                    <li>Docker</li>
+                    <li>AWS / Azure</li>
+                    <li>CI/CD</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openProjectPopup('project1')">
+                <div class="project-image">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution with React and Node.js</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <button class="project-link">View Details</button>
+                </div>
+            </div>
+            <div class="project-card" onclick="openProjectPopup('project2')">
+                <div class="project-image">
+                    <img src="assets/project2.jpg" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Task Management App</h3>
+                    <p>A collaborative task management tool with real-time updates</p>
+                    <div class="project-tags">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                        <span>CSS Grid</span>
+                    </div>
+                    <button class="project-link">View Details</button>
+                </div>
+            </div>
+
+            <!-- Project Popups -->
+            <div id="project1" class="project-popup">
+                <div class="popup-content">
+                    <span class="close-popup" onclick="closeProjectPopup('project1')">&times;</span>
+                    <h2>E-Commerce Platform</h2>
+                    <img src="assets/project1.jpg" alt="Project 1">
+                    <div class="project-details">
+                        <h3>Project Overview</h3>
+                        <p>A comprehensive e-commerce platform built with React and Node.js. This project includes user authentication, product management, shopping cart functionality, and secure payment integration.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>User authentication and authorization</li>
+                            <li>Product catalog with search and filter</li>
+                            <li>Shopping cart and wishlist</li>
+                            <li>Secure payment integration</li>
+                            <li>Admin dashboard for product management</li>
+                        </ul>
+
+                        <h3>Technologies Used</h3>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>Redux</span>
+                            <span>Stripe</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project1" target="_blank" class="source-code-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="https://project1-demo.com" target="_blank" class="live-demo-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project2" class="project-popup">
+                <div class="popup-content">
+                    <span class="close-popup" onclick="closeProjectPopup('project2')">&times;</span>
+                    <h2>Task Management App</h2>
+                    <img src="assets/project2.jpg" alt="Project 2">
+                    <div class="project-details">
+                        <h3>Project Overview</h3>
+                        <p>A real-time task management application built with Vue.js and Firebase. Features include collaborative task management, real-time updates, and team communication tools.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Real-time task updates</li>
+                            <li>Team collaboration tools</li>
+                            <li>Task prioritization and categorization</li>
+                            <li>Progress tracking and analytics</li>
+                            <li>File attachment support</li>
+                        </ul>
+
+                        <h3>Technologies Used</h3>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Vuex</span>
+                            <span>CSS Grid</span>
+                            <span>Cloud Functions</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project2" target="_blank" class="source-code-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>email@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-location-dot"></i>
+                    <p>City, Country</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openProjectPopup(projectId) {
+            document.getElementById(projectId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectPopup(projectId) {
+            document.getElementById(projectId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close popup when clicking outside the content
+        window.onclick = function(event) {
+            if (event.target.classList.contains('project-popup')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
